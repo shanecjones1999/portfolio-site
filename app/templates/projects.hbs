@@ -1,0 +1,10 @@
+<h1>Projects</h1>
+<ul>
+  {{#each @model as |project|}}
+    <li>
+      <LinkTo @route="project" @model={{project.route}}>
+        {{project.title}}
+      </LinkTo>
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,10 @@
+<h1>Blog</h1>
+<ul>
+  {{#each @model as |post|}}
+    <li>
+      <LinkTo @route="blog-post" @model={{post.slug}}>
+        {{post.title}}
+      </LinkTo>
+    </li>
+  {{/each}}
+</ul>
