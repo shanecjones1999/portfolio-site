@@ -8,8 +8,8 @@ module.exports = function (defaults) {
     'ember-cli-showdown': {
       // Add your Showdown options here
       // For example, to enable GitHub flavored markdown:
-      flavor: 'github'
-    }
+      flavor: 'github',
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated

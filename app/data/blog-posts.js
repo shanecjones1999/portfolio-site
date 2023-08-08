@@ -1,10 +1,10 @@
 // This is just a simple array of mock blog posts.
 export default [
-    {
-      id: 1,
-      title: "How to Run: A Beginner's Guide",
-      slug: "how-to-run-a-beginners-guide",
-      content: `## Welcome to My Blog!
+  {
+    id: 1,
+    title: "How to Run: A Beginner's Guide",
+    slug: 'how-to-run-a-beginners-guide',
+    content: `## Welcome to My Blog!
 
       \nThis is an example of a blog post written in Markdown. You can use various Markdown features to format your content, such as headings, lists, links, and more.
     
@@ -16,16 +16,16 @@ export default [
       \n## [link](http://emberjs.com)
 
       \n**Happy blogging!**`,
-      date: "2023-07-15",
-    },
-    {
-      id: 2,
-      title: "My Amazing Trip to the Mountains",
-      slug: "my-amazing-trip-to-the-mountains",
-      content: "Nullam eu nisi a ante aliquet consectetur. Vivamus nec nisi ultrices, venenatis arcu sit amet, varius nunc.",
-      author: "Jane Smith",
-      date: "2023-07-10",
-    },
-    // Add more mock blog posts as needed
-  ];
-  
+    date: '2023-07-15',
+  },
+  {
+    id: 2,
+    title: 'My Amazing Trip to the Mountains',
+    slug: 'my-amazing-trip-to-the-mountains',
+    content:
+      'Nullam eu nisi a ante aliquet consectetur. Vivamus nec nisi ultrices, venenatis arcu sit amet, varius nunc.',
+    author: 'Jane Smith',
+    date: '2023-07-10',
+  },
+  // Add more mock blog posts as needed
+];

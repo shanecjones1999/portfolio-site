@@ -1,0 +1,21 @@
+@import 'app/components/blog-post/_style.scss';
+@import 'app/components/footer/_style.scss';
+@import 'app/components/nav-bar/_style.scss';
+@import 'app/components/project/_style.scss';
+@import 'app/styles/about.scss';
+@import 'app/styles/blog-post.scss';
+@import 'app/styles/blog.scss';
+@import 'app/styles/project.scss';
+@import 'app/styles/not-found.scss';
+
+.content {
+    background-color: gray;
+
+    & .portfolio {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 600px;
+        height: 4000px;
+        margin: auto;
+        background-color: white;
+    }
+}

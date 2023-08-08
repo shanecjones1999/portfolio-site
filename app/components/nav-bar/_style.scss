@@ -1,0 +1,16 @@
+.nav-bar {
+    margin: auto;
+
+    & .nav-items {
+        display: flex;
+        margin-right: auto;
+
+        & .nav-item {
+            color: black;
+            margin: 8px;
+            text-decoration-line: none;
+        }
+    }
+
+    
+}
