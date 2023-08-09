@@ -1,3 +1,18 @@
-<div>{{markdown-to-html (concat '#' @model.title)}}</div>
-<div>{{markdown-to-html @model.date}}</div>
-<div>{{markdown-to-html @model.content}}</div>
+<div class="blog-post-wrapper">
+    <div>
+        <LinkTo @route="blog" class="back-button">
+            Other blog posts
+        </LinkTo>
+    </div>
+    <div class="blog-post">
+        <div class="title">
+            {{markdown-to-html (concat '#' @model.title)}}
+        </div>
+        <div class="date">
+            {{markdown-to-html @model.date}}
+        </div>
+        <div class="post-content">
+            {{markdown-to-html @model.content}}
+        </div>
+    </div>
+</div>

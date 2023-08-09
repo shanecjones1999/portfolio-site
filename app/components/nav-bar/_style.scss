@@ -1,3 +1,5 @@
+//@import '../../styles/globals.scss';
+
 .nav-bar {
     margin: auto;
 
@@ -9,6 +11,11 @@
             color: black;
             margin: 8px;
             text-decoration-line: none;
+
+            &:hover {
+                background-color: $primary-color;
+                color: white;
+            }
         }
     }
 

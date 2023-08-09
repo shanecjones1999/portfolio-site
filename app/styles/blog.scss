@@ -1,0 +1,7 @@
+.blog-wrapper {
+    & .blog {
+        & .title {
+            text-align: center;
+        }
+    }
+}

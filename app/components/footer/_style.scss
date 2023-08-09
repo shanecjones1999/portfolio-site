@@ -4,13 +4,17 @@
     & .footer-items {
         display: flex;
         margin-right: auto;
+        justify-content:center;
 
         & .footer-item {
             color: black;
             margin: 8px;
             text-decoration-line: none;
+    
+            &:hover {
+                background-color: $primary-color;
+                color: white;
+            }
         }
     }
-
-    
 }
