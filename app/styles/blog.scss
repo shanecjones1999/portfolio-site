@@ -12,6 +12,7 @@
 
         & .blog-post {
             color: black;
+            padding: 8px;
             margin-top: 20px;
             margin-bottom: 20px;
 
@@ -25,8 +26,20 @@
                 font-size: $small-text-size;
             }
 
-            .post-title {
+            & .post-title {
                 font-size: $header-size;
+            }
+
+            &:hover {
+                & .post-link {
+                    color: white;
+                }
+
+                & .post-date {
+                    color: white;
+                }
+
+                background-color: black;
             }
         }
         

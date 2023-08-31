@@ -77,7 +77,7 @@ const y = bar(x);`
       },
       {
         type: types.text,
-        value: `This blog is built with Ember.js, a Javascript frontend framework, similar to React, Angular, and Vue. Like this other
+        value: `This blog is built with Ember.js, a Javascript frontend framework, similar to React, Angular, and Vue. Like these other
         frontend frameworks, Ember utilizes components for reusability. This works great for this site, consisting of mostly blog posts 
         and projects, I am able just design a few key pieces (blog posts, project posts), and reuse these pieces again and again! While this is
         _technically_ true, there have been some challenges.`
@@ -115,13 +115,13 @@ const y = bar(x);`
         text and display it, right? Well, yes, but what if I want to <ins>underline</ins> text? What if I want _italicized_ text? Or **bold** text? Or have a 
         [hyperlink to google](https://www.google.com/)?
         I quickly determined trying to parse text for special characters was beyond my paygrade, so I decided to use existing resources. I decided to use a 
-        library called ` + '`markdown to html`' + ` which, as the name suggests, takes markdown and renders html. Exactly what I wanted. Nice!`
+        library called ` + '[`ember cli showdown`](https://github.com/empress/ember-cli-showdown)' + ` which, as the name suggests, takes markdown and renders html. Exactly what I wanted!`
       },
       {
         type: types.text,
         value: `Code blocks presented a similar issue. How do I do syntax highlighting? What if the code is Python or C# or Javascript or Typescript? Well, I don't feel too
         strongly about the second question. I think any sort of syntax highlighting will be sufficient for me. But tokenizing strings and classifying tokens seems like a pain.
-        Not gonna bother with that! I decided to use ` + '`ember prism`' + ` to handle syntax highlighting for me. Great!`
+        Not gonna bother with that! I decided to use ` + '[`ember prism`](https://github.com/shipshapecode/ember-prism)' + ` to handle syntax highlighting for me. Great!`
       },
       {
         type: types.text,

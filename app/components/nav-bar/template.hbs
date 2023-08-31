@@ -1,8 +1,8 @@
 <div class="nav-bar">
     <div class="nav-items">
-        <LinkTo @route="home" class="nav-item">Home</LinkTo>
-        <LinkTo @route="blog" class="nav-item">Blog</LinkTo>
-        <LinkTo @route="projects" class="nav-item">Projects</LinkTo>
+        <LinkTo @route="home" class="nav-item {{if (eq this.router.currentRouteName 'home') 'selected'}}">Home</LinkTo>
+        <LinkTo @route="blog" class="nav-item {{if (or (eq this.router.currentRouteName 'blog') (eq this.router.currentRouteName 'blog-post')) 'selected'}}">Blog</LinkTo>
+        <LinkTo @route="projects" class="nav-item {{if (eq this.router.currentRouteName 'projects') 'selected'}}">Projects</LinkTo>
         <div class="nav-item">Resume</div>
     </div>
 
