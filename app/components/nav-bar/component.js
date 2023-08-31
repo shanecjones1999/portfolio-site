@@ -1,3 +1,4 @@
 import Component from '@glimmer/component';
 
-export default class NavBar extends Component {}
+export default class NavBar extends Component {
+}

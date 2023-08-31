@@ -6,6 +6,9 @@ module.exports = function (environment) {
     environment,
     rootURL: '/',
     locationType: 'history',
+    fontawesome: {
+      defaultPrefix: 'fa' // light icons
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

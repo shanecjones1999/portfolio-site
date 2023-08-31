@@ -1,0 +1,19 @@
+.code-block-section {
+    & .code-block {
+        background-color: #1e1e1e; /* Dark background color */
+        color: #ffffff; /* Text color for code */
+        padding: 10px;
+        border-radius: 5px;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        overflow-x: auto; /* Allow horizontal scrolling if content overflows */
+      }
+      
+      /* Styling for code inside the code block */
+      & .code-block code {
+        display: block; /* Display as a block element to prevent line wrapping */
+        padding: 0;
+        margin: 0;
+        //white-space: pre; /* Preserve whitespace and line breaks */
+      }
+}

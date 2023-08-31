@@ -1,0 +1,19 @@
+<div class="blog-post-section">
+    {{#if (eq @type this.types.text)}}
+        <TextSection @value={{@value}} />
+    {{else if (eq @type this.types.codeBlock)}}
+        <CodeBlockSection @value={{@value}} />
+    {{else if (eq @type this.types.image)}}
+        <ImageSection @value={{@value}} />
+    {{else if (eq @type this.types.socialMediaEmbedding)}}
+        <SocialMediaEmbeddingSection @value={{@value}} />
+    {{else if (eq @type this.types.link)}}
+        <LinkSection @value={{@value}} />
+    {{else if (eq @type this.types.table)}}
+        <TableSection @value={{@value}} />
+    {{else if (eq @type this.types.equation)}}
+        <EquationSection @value={{@value}} />
+    {{else if (eq @type this.types.quote)}}
+        <QuoteSection @value={{@value}} />
+    {{/if}}
+</div>

@@ -1,0 +1,9 @@
+{{#if @inline}}
+    <span class="code-block-inline">
+        <CodeInline @code={{@value}}/>
+    </span>
+{{else}}
+    <div class="code-block-section">
+        <CodeBlock @code={{@value}} @language="javascript"/>
+    </div>
+{{/if}}

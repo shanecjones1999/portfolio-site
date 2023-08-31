@@ -1,18 +1,14 @@
 <div class="blog-post-wrapper">
-    <div>
-        <LinkTo @route="blog" class="back-button">
-            Other blog posts
-        </LinkTo>
-    </div>
     <div class="blog-post">
         <div class="title">
-            {{markdown-to-html (concat '#' @model.title)}}
+            {{markdown-to-html (concat '#' @blogPost.title)}}
         </div>
-        <div class="date">
-            {{markdown-to-html @model.date}}
+        <div class="post-date">
+            <FaIcon @icon="calendar-alt" @size="1x"/>
+            {{@blogPost.date}}   
         </div>
-        <div class="post-content">
-            {{markdown-to-html @model.content}}
-        </div>
+        {{#each @blogPost.content as |section|}}
+            <BlogPostSection @value={{section.value}} @type={{section.type}}/>
+        {{/each}}
     </div>
 </div>

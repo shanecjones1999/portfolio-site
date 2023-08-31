@@ -1,19 +1,28 @@
 .footer {
-    margin: auto;
+    height: 100px;
+    margin-top: 30px;
+
+    & .divider {
+        margin: 0px;
+    }
 
     & .footer-items {
         display: flex;
-        margin-right: auto;
-        justify-content:center;
+        justify-content: center;
+        margin: 8px;
 
         & .footer-item {
             color: black;
             margin: 8px;
             text-decoration-line: none;
-    
-            &:hover {
-                background-color: $primary-color;
-                color: white;
+            display: flex;
+
+            & .icon {
+                margin: 2px;
+            }
+
+            & .text {
+                margin: 2px;
             }
         }
     }

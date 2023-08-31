@@ -1,24 +1,21 @@
+@import '../../styles/globals.scss';
+
 .blog-post-wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-    & .back-button {
-        color: black;
-        margin: 8px;
-        text-decoration-line: none;
-        &:hover {
-            background-color: $primary-color;
-            color: white;
-        }
-    }
+    padding-left: $section-padding;
+    padding-right: $section-padding;
 
     & .blog-post {
         & .title {
-            text-align: center;
+            h1 {
+                font-size: $header-size;
+                margin: 0px;
+                padding: 0px;
+            }
         }
 
-        & .date {
-            color: $light-gray;
-            text-align: center;
+        & .post-date {
+            font-size: $small-text-size;
+            color: $dark-gray;
         }
 
         & .post-content {

@@ -1,7 +1,34 @@
+@import './globals.scss';
+
 .blog-wrapper {
     & .blog {
-        & .title {
-            text-align: center;
+        padding-left: $section-padding;
+        padding-right: $section-padding;
+
+        & h2.title {
+            font-size: $header-size;
+            margin: 0px;
         }
+
+        & .blog-post {
+            color: black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            & .post-link {
+                color: black;
+                text-decoration-line: none;
+            }
+
+            & .post-date {
+                color: $dark-gray;
+                font-size: $small-text-size;
+            }
+
+            .post-title {
+                font-size: $header-size;
+            }
+        }
+        
     }
 }

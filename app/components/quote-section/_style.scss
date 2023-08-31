@@ -1,0 +1,17 @@
+.quote-section {
+    /* Styling for the quote block container */
+    & .quote-block {
+        border-left: 4px solid #007bff;
+        padding-left: 20px;
+        margin: 20px 0;
+        font-style: italic;
+    }
+  
+    /* Styling for the attribution/source */
+    & .quote-author {
+        margin-top: 10px;
+        font-size: 0.9em;
+        color: #888888;
+    }
+  
+}

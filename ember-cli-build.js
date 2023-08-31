@@ -10,6 +10,12 @@ module.exports = function (defaults) {
       // For example, to enable GitHub flavored markdown:
       flavor: 'github',
     },
+
+    'ember-prism': {
+      //theme: 'twilight',
+      //components: ['scss', 'javascript'], //needs to be an array, or undefined.
+      plugins: ['line-numbers']
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

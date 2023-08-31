@@ -3,25 +3,37 @@
 @import 'app/components/footer/_style.scss';
 @import 'app/components/nav-bar/_style.scss';
 @import 'app/components/project/_style.scss';
-@import 'app/styles/about.scss';
+@import 'app/components/blog-post-section/_style.scss';
+@import 'app/components/text-section/_style.scss';
+@import 'app/components/table-section/_style.scss';
+@import 'app/components/social-media-embedding-section/_style.scss';
+@import 'app/components/link-section/_style.scss';
+@import 'app/components/image-section/_style.scss';
+@import 'app/components/equation-section/_style.scss';
+@import 'app/components/code-block-section/_style.scss';
+@import 'app/components/quote-section/_style.scss';
 @import 'app/styles/blog.scss';
 @import 'app/styles/project.scss';
 @import 'app/styles/not-found.scss';
 
+// Font Awesome icons.
+
 body {
     margin: 0;
     height: 100%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 
     & .portfolio-site {
+
         & .content {
-            width: 100%;
-            margin: 0;
-            padding: 20px;
-            background-color: $light-gray;
+            max-width: 800px;
+            margin: auto;
+            padding-left: 20px;
+            padding-right: 20px;
     
             & .portfolio {
-                max-width: 600px;
                 margin: auto;
                 background-color: white;
             }

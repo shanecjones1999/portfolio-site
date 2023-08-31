@@ -1,14 +1,21 @@
 <div class="blog-wrapper">
     <div class="blog">
-        <ul>
-            {{#each @model as |post|}}
-                <li>
-                    <LinkTo @route="blog-post" @model={{post.slug}}>
+        <h2 class="title">
+            Posts
+        </h2>
+            {{#each @model.blogPosts as |post|}}
+            <div class="blog-post">
+                <LinkTo class="post-link" @route="blog-post" @model={{post.slug}}>
+                    <div class="post-title">
                         {{post.title}}
-                    </LinkTo>
-                </li>
+                    </div>
+                    <div class="post-date">
+                        <FaIcon @icon="calendar-alt"/>
+                        {{post.date}}
+                    </div>
+                </LinkTo>
+            </div>
             {{/each}}
-        </ul>
     </div>
 </div>
 

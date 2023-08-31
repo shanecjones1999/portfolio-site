@@ -25,6 +25,8 @@
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.8.1",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
     "babel-eslint": "^10.1.0",
@@ -44,10 +46,12 @@
     "ember-fetch": "^8.1.1",
     "ember-load-initializers": "^2.1.2",
     "ember-page-title": "^7.0.0",
+    "ember-prism": "^0.13.0",
     "ember-qunit": "^5.1.5",
     "ember-resolver": "^8.0.3",
     "ember-source": "~4.6.0",
     "ember-template-lint": "^4.10.1",
+    "ember-truth-helpers": "^3.1.1",
     "ember-welcome-page": "^6.2.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",
@@ -68,5 +72,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "@fortawesome/ember-fontawesome": "^1.0.1"
   }
 }

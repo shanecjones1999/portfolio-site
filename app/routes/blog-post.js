@@ -11,7 +11,7 @@ export default class BlogPostRoute extends Route {
     const blogPost = A(blogPosts).findBy('slug', params.slug);
 
     if (blogPost) {
-      return blogPost;
+      return { blogPost };
     }
   }
 }
