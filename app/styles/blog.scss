@@ -10,28 +10,30 @@
             margin: 0px;
         }
 
-        & .blog-post {
-            color: black;
-            padding: 8px;
+        & .blog-post-wrapper {
             margin-top: 20px;
             margin-bottom: 20px;
+            padding: 8px;
 
-            & .post-link {
-                color: black;
+            & .blog-post {
                 text-decoration-line: none;
-            }
+    
+                & .post-title {
+                    color: black;
+                    font-size: $header-size;
+                }
+    
+                & .post-date {
+                    color: $dark-gray;
+                    font-size: $small-text-size;
+                }
 
-            & .post-date {
-                color: $dark-gray;
-                font-size: $small-text-size;
-            }
+                & .description {
+                    color: black;
+                }
 
-            & .post-title {
-                font-size: $header-size;
-            }
-
-            &:hover {
-                & .post-link {
+            } &:hover {
+                & .post-title {
                     color: white;
                 }
 
@@ -39,9 +41,12 @@
                     color: white;
                 }
 
+                & .description {
+                    color: white;
+                }
+
                 background-color: black;
             }
         }
-        
     }
 }

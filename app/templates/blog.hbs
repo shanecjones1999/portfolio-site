@@ -4,8 +4,8 @@
             Posts
         </h2>
             {{#each @model.blogPosts as |post|}}
-            <div class="blog-post">
-                <LinkTo class="post-link" @route="blog-post" @model={{post.slug}}>
+            <div class="blog-post-wrapper">
+                <LinkTo class="blog-post" @route="blog-post" @model={{post.slug}}>
                     <div class="post-title">
                         {{post.title}}
                     </div>
