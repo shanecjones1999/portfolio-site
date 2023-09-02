@@ -1,10 +1,23 @@
-<h1>Projects</h1>
-<ul>
-  {{#each @model as |project|}}
-    <li>
-      <LinkTo @route="project" @model={{project.route}}>
-        {{project.title}}
-      </LinkTo>
-    </li>
-  {{/each}}
-</ul>
+<div class='blog-wrapper'>
+    <div class='blog'>
+        <h2 class='title'>
+            Projects
+        </h2>
+        {{#each @model.projects as |project|}}
+            <div class='blog-post'>
+                <LinkTo class="post-link" @route="project-post" @model={{project.slug}}>
+                    <div class='post-title'>
+                        {{project.title}}
+                    </div>
+                    <div class='post-date'>
+                        <FaIcon @icon='calendar-alt' />
+                        {{project.date}}
+                    </div>
+                    <div class='description'>
+                        {{project.description}}
+                    </div>
+                </LinkTo>
+            </div>
+        {{/each}}
+    </div>
+</div>
